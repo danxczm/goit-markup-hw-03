@@ -48,7 +48,6 @@ img {
   padding-left: 15px;
   margin-left: auto;
   margin-right: auto;
-  /* outline: 1px solid tomato; */
 }
 
 .section {
@@ -83,6 +82,15 @@ img {
 .site-logo {
   margin-right: 93px;
 
+  color: var(--accent-color);
+  font-family: Raleway, sans-serif;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+}
+
+.site-logo-footer {
   color: var(--accent-color);
   font-family: Raleway, sans-serif;
   font-size: 26px;
@@ -164,12 +172,12 @@ img {
 
 /* ----------------FOOTER---------------- */
 .footer {
+  padding: 60px 0;
   background-color: var(--design-bg-color);
 }
 
 .white-half-logo {
   display: inline-block;
-  margin-top: 60px;
   color: var(--white-text-color);
 }
 
@@ -191,24 +199,29 @@ img {
 
 .footer-list {
   display: inline-block;
-  margin-top: 20px;
-  margin-bottom: 60px;
 }
 
 .footer-item:not(:last-child) {
   margin-bottom: 9px;
 }
 
+.footer-address {
+  margin-top: 20px;
+}
 /* ----------------"Студия" page CSS---------------- */
 
 /* ----------------HERO SECTION---------------- */
 .hero-section {
+  padding: 200px 0;
   background-color: #2f303a;
   text-align: center;
 }
 
 .hero-title {
   margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 696px;
 
   color: var(--white-text-color);
   text-transform: uppercase;
@@ -243,7 +256,7 @@ img {
 /* ----------------ADVANTAGES---------------- */
 
 .advantages-section {
-  padding-top: 94px;
+  padding-bottom: 0;
 }
 
 .advantages-list {
@@ -283,7 +296,6 @@ img {
   margin-left: -30px;
   margin-top: -30px;
   display: flex;
-  flex-wrap: wrap;
 }
 
 .we-make-item {
@@ -316,12 +328,12 @@ img {
 }
 
 .team-item {
-  flex-basis: calc(100% / 4 - 30px);
-  margin-left: 30px;
-  margin-top: 30px;
-
   box-shadow: var(--card-shadow);
   border-radius: 0px 0px 4px 4px;
+}
+
+.team-item:not(:last-child) {
+  margin-right: 30px;
 }
 
 .team-title {
